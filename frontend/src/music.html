@@ -5,11 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="jam">
-        <div class="jam__user jam__user--1"></div>
-        <div class="jam__user jam__user--2"></div>
+        <div class="jam__user jam__user--1">
+            <span class="jam__username">username</span>
+            <ul class="keyboard">
+                <li class="keyboard__key keyboard__key--basic">C</li>
+                <li class="keyboard__key keyboard__key--basic">D</li>
+                <li class="keyboard__key keyboard__key--basic">E</li>
+                <li class="keyboard__key keyboard__key--basic">F</li>
+                <li class="keyboard__key keyboard__key--basic">G</li>
+                <li class="keyboard__key keyboard__key--basic">A</li>
+                <li class="keyboard__key keyboard__key--basic">B</li>
+                <li class="keyboard__key keyboard__key--sharp">c#</li>
+                <li class="keyboard__key keyboard__key--sharp">b#</li>
+                <li class="keyboard__key keyboard__key--sharp">f#</li>
+                <li class="keyboard__key keyboard__key--sharp">e#</li>
+                <li class="keyboard__key keyboard__key--sharp">a#</li>
+            </ul>
+        </div>
+        <div class="jam__user jam__user--2">
+            <span class="jam__username">username 2</span>
+        </div>
     </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+
+
 </body>
 </html>

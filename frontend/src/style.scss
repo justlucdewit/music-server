@@ -7,6 +7,7 @@
     text-decoration: none;
     color: black;
     font-family: sans-serif;
+    box-sizing: border-box;
 }
 
 $primary-color: rgb(213, 235, 255);
@@ -66,4 +67,58 @@ button{
 
     color: white;
     cursor: pointer;
+}
+
+.jam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+
+    &__user{
+        border: 1px solid $primary-color--dark;
+        width: 50%;
+        height: 100%;
+
+        position: relative;
+    }
+
+    
+    &__username{
+        display: block;
+        position: absolute;
+        top: 24px; left: 50%;
+        transform: translate(-50%);
+
+        padding: 16px;
+        border-radius: 5px;
+
+        background-color: #fff;
+        box-shadow: 0 0 5px 0 $primary-color--dark;
+    }
+}
+
+
+.keyboard{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 250px;
+    margin: 24px;
+
+    display: flex;
+
+    &__key{
+        background-color: $primary-color--light;
+        border: 1px solid $primary-color--dark;
+
+        overflow: hidden;
+
+        &--sharp{
+            background-color: $primary-color--dark;
+
+        }
+    }
 }
