@@ -111,7 +111,6 @@ button{
     display: flex;
 
     &__key{
-        background-color: $primary-color--light;
         border: 1px solid $primary-color--dark;
 
         overflow: hidden;
@@ -120,8 +119,17 @@ button{
         justify-content: center;
         align-items: flex-end;
 
+        user-select: none;
+        cursor: pointer;
+
         &--basic{
             width: 72px;
+            padding-bottom: 24px;
+            background-color: $primary-color--light;
+            transition: .1s all ease-out;
+            &:hover{
+                background-color: $primary-color--dark;
+            }
         }
 
         &--sharp{
@@ -132,8 +140,25 @@ button{
             height: 60%;
 
             top: 0;
-            --posi
-            left: ;
+            left: 48px;
+
+            padding-bottom: 24px;
+
+            &[data-num="2"]{
+                left: 128px;
+            }
+
+            &[data-num="3"]{
+                left: 264px;
+            }
+
+            &[data-num="4"]{
+                left: 338px;
+            }
+
+            &[data-num="5"]{
+                left: 408px;
+            }
         }
     }
 }

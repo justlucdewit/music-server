@@ -92,15 +92,25 @@ button {
   display: flex;
 }
 .keyboard__key {
-  background-color: rgb(232, 245, 255);
   border: 1px solid rgb(89, 137, 173);
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
 }
 .keyboard__key--basic {
   width: 72px;
+  padding-bottom: 24px;
+  background-color: rgb(232, 245, 255);
+  transition: 0.1s all ease-out;
+}
+.keyboard__key--basic:hover {
+  background-color: rgb(89, 137, 173);
 }
 .keyboard__key--sharp {
   background-color: rgb(89, 137, 173);
@@ -108,4 +118,18 @@ button {
   width: 48px;
   height: 60%;
   top: 0;
+  left: 48px;
+  padding-bottom: 24px;
+}
+.keyboard__key--sharp[data-num="2"] {
+  left: 128px;
+}
+.keyboard__key--sharp[data-num="3"] {
+  left: 264px;
+}
+.keyboard__key--sharp[data-num="4"] {
+  left: 338px;
+}
+.keyboard__key--sharp[data-num="5"] {
+  left: 408px;
 }/*# sourceMappingURL=style.css.map */
