@@ -90,9 +90,12 @@ button {
   height: 250px;
   margin: 24px;
   display: flex;
+  border-radius: 5px;
+  overflow: hidden;
 }
 .keyboard__key {
   border: 1px solid rgb(89, 137, 173);
+  border-radius: 5px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -110,7 +113,10 @@ button {
   transition: 0.1s all ease-out;
 }
 .keyboard__key--basic:hover {
-  background-color: rgb(89, 137, 173);
+  background-color: rgb(213, 235, 255);
+}
+.keyboard__key--basic:active {
+  background-color: rgb(16, 145, 117);
 }
 .keyboard__key--sharp {
   background-color: rgb(89, 137, 173);
@@ -120,6 +126,13 @@ button {
   top: 0;
   left: 48px;
   padding-bottom: 24px;
+  transition: 0.1s all ease-out;
+}
+.keyboard__key--sharp:hover {
+  background-color: rgb(53, 82, 104);
+}
+.keyboard__key--sharp:active {
+  background-color: rgb(49, 199, 166);
 }
 .keyboard__key--sharp[data-num="2"] {
   left: 128px;

@@ -109,9 +109,12 @@ button{
     margin: 24px;
 
     display: flex;
+    border-radius: 5px;
+    overflow: hidden;
 
     &__key{
         border: 1px solid $primary-color--dark;
+        border-radius: 5px;
 
         overflow: hidden;
 
@@ -127,8 +130,13 @@ button{
             padding-bottom: 24px;
             background-color: $primary-color--light;
             transition: .1s all ease-out;
+
             &:hover{
-                background-color: $primary-color--dark;
+                background-color: $primary-color;
+            }
+
+            &:active{
+                background-color: rgb(16, 145, 117);
             }
         }
 
@@ -143,6 +151,15 @@ button{
             left: 48px;
 
             padding-bottom: 24px;
+            transition: .1s all ease-out;
+
+            &:hover{
+                background-color: rgb(53, 82, 104);
+            }
+
+            &:active{
+                background-color: rgb(49, 199, 166);
+            }
 
             &[data-num="2"]{
                 left: 128px;
