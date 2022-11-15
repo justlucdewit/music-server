@@ -24,7 +24,7 @@ app.post('/login', (req, res) => {
     const userId = uuid.v4();
     const user = {
         id: userId,
-        name: req.body.user
+        name: req.body.name
     }
 
     res.send(user);
