@@ -7,7 +7,6 @@ const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
 
-
 const sessions = [];
 
 app.use(bodyParser.json());
@@ -20,6 +19,10 @@ app.get('/style.css', (req, res) => {
     res.sendFile(__dirname + '\\frontend\\src\\style.css');
 });
 
+app.get('/main.js', (req, res) => {
+    res.sendFile(__dirname + '\\frontend\\src\\main.js');
+});
+
 app.post('/login', (req, res) => {
     const userId = uuid.v4();
     const user = {
@@ -27,8 +30,14 @@ app.post('/login', (req, res) => {
         name: req.body.name
     }
 
+    sessions.push(user);
+
     res.send(user);
 })
+
+app.get('/sessions', (req, res) => {
+    res.send(sessions);
+});
 
 io.on('connection', (socket) => {
     socket.on('play_note', msg => {
