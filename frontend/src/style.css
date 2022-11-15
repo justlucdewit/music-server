@@ -90,11 +90,12 @@ button {
   height: 250px;
   margin: 24px;
   display: flex;
+  gap: 2px;
   border-radius: 5px;
   overflow: hidden;
 }
 .keyboard__key {
-  border: 1px solid rgb(89, 137, 173);
+  border: 1px solid var(--border-color);
   border-radius: 5px 5px 15px 15px;
   overflow: hidden;
   display: flex;
@@ -118,13 +119,22 @@ button {
 .keyboard__key--basic:active {
   background-color: rgb(16, 145, 117);
 }
+.keyboard__key--basic.keyboard__key--alternative {
+  background-color: rgb(245, 224, 243);
+}
+.keyboard__key--basic.keyboard__key--alternative:hover {
+  background-color: rgb(161, 108, 157);
+}
+.keyboard__key--basic.keyboard__key--alternative:active {
+  background-color: rgb(230, 59, 116);
+}
 .keyboard__key--sharp {
   background-color: rgb(89, 137, 173);
   position: absolute;
   width: 48px;
   height: 60%;
   top: 0;
-  left: 48px;
+  left: 198px;
   padding-bottom: 24px;
   transition: 0.1s all ease-out;
 }
@@ -134,15 +144,27 @@ button {
 .keyboard__key--sharp:active {
   background-color: rgb(49, 199, 166);
 }
+.keyboard__key--sharp.keyboard__key--alternative {
+  background-color: rgb(161, 108, 157);
+}
+.keyboard__key--sharp.keyboard__key--alternative:hover {
+  background-color: rgb(117, 60, 113);
+}
+.keyboard__key--sharp.keyboard__key--alternative:active {
+  background-color: rgb(247, 14, 122);
+}
+.keyboard__key--sharp[data-num="0"] {
+  left: 48px;
+}
 .keyboard__key--sharp[data-num="2"] {
-  left: 128px;
+  left: 270px;
 }
 .keyboard__key--sharp[data-num="3"] {
-  left: 264px;
+  left: 418px;
 }
 .keyboard__key--sharp[data-num="4"] {
-  left: 338px;
+  left: 495px;
 }
 .keyboard__key--sharp[data-num="5"] {
-  left: 408px;
+  left: 565px;
 }/*# sourceMappingURL=style.css.map */

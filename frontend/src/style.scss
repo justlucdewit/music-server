@@ -109,11 +109,12 @@ button{
     margin: 24px;
 
     display: flex;
+    gap: 2px;
     border-radius: 5px;
     overflow: hidden;
 
     &__key{
-        border: 1px solid $primary-color--dark;
+        border: 1px solid var(--border-color);
         border-radius: 5px 5px 15px 15px;
 
         overflow: hidden;
@@ -138,6 +139,18 @@ button{
             &:active{
                 background-color: rgb(16, 145, 117);
             }
+
+            &.keyboard__key--alternative{
+                background-color: rgb(245, 224, 243);
+
+                &:hover{
+                    background-color: rgb(161, 108, 157);
+                }
+    
+                &:active{
+                    background-color: rgb(230, 59, 116);
+                }
+            }
         }
 
         &--sharp{
@@ -148,7 +161,7 @@ button{
             height: 60%;
 
             top: 0;
-            left: 48px;
+            left: 198px;
 
             padding-bottom: 24px;
             transition: .1s all ease-out;
@@ -161,20 +174,36 @@ button{
                 background-color: rgb(49, 199, 166);
             }
 
+            &.keyboard__key--alternative{
+                background-color: rgb(161, 108, 157);
+
+                &:hover{
+                    background-color: rgb(117, 60, 113);
+                }
+    
+                &:active{
+                    background-color: rgb(247, 14, 122);
+                }
+            }
+
+            &[data-num="0"]{
+                left: 48px;
+            }
+
             &[data-num="2"]{
-                left: 128px;
+                left: 270px;
             }
 
             &[data-num="3"]{
-                left: 264px;
+                left: 418px;
             }
 
             &[data-num="4"]{
-                left: 338px;
+                left: 495px;
             }
 
             &[data-num="5"]{
-                left: 408px;
+                left: 565px;
             }
         }
     }
