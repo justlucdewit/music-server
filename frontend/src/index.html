@@ -1,9 +1,26 @@
-<html>
-    <head>
-        <script src="/socket.io/socket.io.js"></script>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        Hello World
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUNEgether</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="homepage">
+        <div class="homepage__popup">
+            <h1>Make Music... TUNEgether</h1>
+            <h2>Welcome young musician !</h2>
+            <p>Are you ready for the best jam of your life ?</p>
+            <label for="">
+                <span>What's your artist's name ?</span>
+                <input type="text" name="username" id="username">
+            </label>
+            <button id="start">Start the music !</button>
+        </div>
+    </section>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
 </html>
