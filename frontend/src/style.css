@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Rakkas&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+}
+
+.homepage {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(213, 235, 255);
+  position: relative;
+}
+.homepage__popup {
+  padding: 16px;
+  border-radius: 5px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 0 8px 2px rgb(89, 137, 173);
+}
+
+h1 {
+  font-family: "Rokkos";
+}
+
+input[type=text] {
+  padding: 12px 16px;
+  background-color: rgb(232, 245, 255);
+  border-radius: 5px;
+  outline: transparent;
+  border: transparent;
+  display: block;
+  margin-top: 4px;
+}
+
+button {
+  padding: 12px 16px;
+  background-color: rgb(89, 137, 173);
+  border-radius: 5px;
+  outline: transparent;
+  border: transparent;
+  margin-top: 4px;
+  color: white;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
