@@ -104,7 +104,7 @@ button{
     position: absolute;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
+    width: auto;
     height: 250px;
     margin: 24px;
 
@@ -116,8 +116,17 @@ button{
 
         overflow: hidden;
 
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        &--basic{
+            width: 72px;
+        }
+
         &--sharp{
             background-color: $primary-color--dark;
+            // position: absolute;
 
         }
     }

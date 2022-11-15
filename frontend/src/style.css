@@ -86,7 +86,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 500px;
+  width: auto;
   height: 250px;
   margin: 24px;
   display: flex;
@@ -95,6 +95,12 @@ button {
   background-color: rgb(232, 245, 255);
   border: 1px solid rgb(89, 137, 173);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.keyboard__key--basic {
+  width: 72px;
 }
 .keyboard__key--sharp {
   background-color: rgb(89, 137, 173);
