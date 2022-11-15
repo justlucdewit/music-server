@@ -104,4 +104,8 @@ button {
 }
 .keyboard__key--sharp {
   background-color: rgb(89, 137, 173);
+  position: absolute;
+  width: 48px;
+  height: 60%;
+  top: 0;
 }/*# sourceMappingURL=style.css.map */

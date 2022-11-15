@@ -126,8 +126,14 @@ button{
 
         &--sharp{
             background-color: $primary-color--dark;
-            // position: absolute;
+            position: absolute;
 
+            width: 48px;
+            height: 60%;
+
+            top: 0;
+            --posi
+            left: ;
         }
     }
 }
