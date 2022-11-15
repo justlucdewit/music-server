@@ -15,12 +15,20 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '\\frontend\\src\\index.html');
 });
 
+app.get('/music.html', (req, res) => {
+    res.sendFile(__dirname + '\\frontend\\src\\music.html');
+});
+
 app.get('/style.css', (req, res) => {
     res.sendFile(__dirname + '\\frontend\\src\\style.css');
 });
 
 app.get('/main.js', (req, res) => {
     res.sendFile(__dirname + '\\frontend\\src\\main.js');
+});
+
+app.get('/connector.js', (req, res) => {
+    res.sendFile(__dirname + '\\frontend\\src\\connector.js');
 });
 
 app.post('/login', (req, res) => {
