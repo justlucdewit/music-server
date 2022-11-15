@@ -49,7 +49,7 @@ app.get('/sessions', (req, res) => {
 
 io.on('connection', (socket) => {
     socket.on('play_note', msg => {
-        console.log('[play_note] message: ' + msg);
+        io.emit('play_note', msg);
     });
 });
 
