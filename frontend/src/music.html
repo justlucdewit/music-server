@@ -12,13 +12,13 @@
         <div class="jam__user jam__user--1">
             <span class="jam__username">username</span>
             <ul class="keyboard">
-                <li class="keyboard__key keyboard__key--basic">C</li>
-                <li class="keyboard__key keyboard__key--basic">D</li>
-                <li class="keyboard__key keyboard__key--basic">E</li>
-                <li class="keyboard__key keyboard__key--basic">F</li>
-                <li class="keyboard__key keyboard__key--basic">G</li>
-                <li class="keyboard__key keyboard__key--basic">A</li>
-                <li class="keyboard__key keyboard__key--basic">B</li>
+                <li class="keyboard__key keyboard__key--basic" onclick="play_note('piano', 'C4', userid)">C</li>
+                <li class="keyboard__key keyboard__key--basic" onclick="play_note('piano', 'D4', userid)">D</li>
+                <li class="keyboard__key keyboard__key--basic" onclick="play_note('piano', 'E4', userid)">E</li>
+                <li class="keyboard__key keyboard__key--basic" onclick="play_note('piano', 'F4', userid)">F</li>
+                <li class="keyboard__key keyboard__key--basic" onclick="play_note('piano', 'G4', userid)">G</li>
+                <li class="keyboard__key keyboard__key--basic" onclick="play_note('piano', 'A4', userid)">A</li>
+                <li class="keyboard__key keyboard__key--basic" onclick="play_note('piano', 'B4', userid)">B</li>
                 <li class="keyboard__key keyboard__key--sharp" data-num="1">c#</li>
                 <li class="keyboard__key keyboard__key--sharp" data-num="2">b#</li>
                 <li class="keyboard__key keyboard__key--sharp" data-num="3">f#</li>
@@ -44,6 +44,7 @@
             </ul>
         </div>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
     <script src="/socket.io/socket.io.js"></script>
     <script src="main.js"></script>
     <script src="connector.js"></script>
